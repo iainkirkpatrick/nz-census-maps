@@ -1,66 +1,85 @@
+
 <!doctype html>
-<html class="no-js" lang="en">
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Census NZ Maps</title>
+
+    
+    <meta name="description" content="Documentation and reference library for ZURB Foundation. JavaScript, CSS, components, grid and more." />
+    
+    <meta name="author" content="ZURB, inc. ZURB network also includes zurb.com" />
+    <meta name="copyright" content="ZURB, inc. Copyright (c) 2013" />
+
     <link rel="stylesheet" href="css/foundation.css" />
     <script src="js/modernizr.js"></script>
     <link href='http://api.tiles.mapbox.com/mapbox.js/v1.5.2/mapbox.css' rel='stylesheet' />
     <script src='http://api.tiles.mapbox.com/mapbox.js/v1.5.2/mapbox.js'></script>
-    <style> #map { height:800px; }</style>
+    <style> #map { height:800px; } </style>
   </head>
   <body>
     
-<!-- Header and Nav -->
-  
+
+  <!-- Header and Nav -->
+
   <div class="row">
-    <div class="large-3 columns">
-      <h1><img src="http://placehold.it/400x100&text=Logo" /></h1>
-    </div>
-    <div class="large-9 columns">
-      <ul class="inline-list right">
-        <li><a href="#">Section 1</a></li>
-        <li><a href="#">Section 2</a></li>
-        <li><a href="#">Section 3</a></li>
-        <li><a href="#">Section 4</a></li>
-      </ul>
+    <div class="large-12 columns">
+      <h2>iainkirkpatrick.me</h2>
     </div>
   </div>
-  
+
   <!-- End Header and Nav -->
-  
-  
-  <div class="row">    
-    
-    <!-- Main Content Section -->
-    <!-- This has been source ordered to come first in the markup (and on small devices) but to be to the right of the nav on larger screens -->
-    <div class="large-9 push-3 columns">
+
+
+  <!-- First Band (title) -->
+
+  <div class="row">
+    <div class="large-12 columns">
+      <h1>the 2013 NZ Census analysis</h1>
+      <ul class="button-group left">
+        <li><a href="#" class="button">section 1</a></li>
+        <li><a href="#" class="button">section 2</a></li>
+        <li><a href="#" class="button">section 3</a></li>
+        <li><a href="#" class="button">section 4</a></li>
+      </ul>
+      <hr>
+    </div>
+  </div>
+  <!-- Second Band (Map right with Text) -->
+
+  <div class="row">
+    <div class="large-5 columns">
+      <h4>This is a content section.</h4>
+      <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
+
+      <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p>   
+    </div>
+    <div class="large-7 columns">
       <div id="map"></div>
     </div>
-    
-    <!-- Nav Sidebar -->
-    <!-- This is source ordered to be pulled to the left on larger screens -->
-    <div class="large-3 pull-9 columns">
-        
-      <ul class="side-nav">
-        <li><a href="#">Section 1</a></li>
-        <li><a href="#">Section 2</a></li>
-        <li><a href="#">Section 3</a></li>
-        <li><a href="#">Section 4</a></li>
-        <li><a href="#">Section 5</a></li>
-        <li><a href="#">Section 6</a></li>
-      </ul>
-      
-      <p><img src="http://placehold.it/320x240&text=Ad" /></p>
-        
-    </div>
-    
   </div>
-    
-  
+
+
+  <!-- Third Band (Map left with Text) -->
+
+  <div class="row">
+    <div class="large-7 columns">
+      <div id="map"></div> <!-- obv change to other maps -->
+    </div>
+    <div class="large-5 columns">
+      <h4>This is a content section.</h4>
+
+      <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
+
+      <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p>
+    </div>
+  </div>
+
+
   <!-- Footer -->
-  
+
   <footer class="row">
     <div class="large-12 columns">
       <hr />
@@ -70,19 +89,18 @@
         </div>
         <div class="large-6 columns">
           <ul class="inline-list right">
-            <li><a href="#">Section 1</a></li>
-            <li><a href="#">Section 2</a></li>
-            <li><a href="#">Section 3</a></li>
-            <li><a href="#">Section 4</a></li>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
           </ul>
         </div>
       </div>
-    </div> 
+    </div>
   </footer>
     <script src="js/jquery.js"></script>
     <script src="js/foundation/foundation.js"></script>
     <script>
-      //initial foundation script
       $(document).foundation();
 
       var doc = document.documentElement;
